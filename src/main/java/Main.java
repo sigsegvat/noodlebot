@@ -17,11 +17,11 @@ public class Main {
         Configuration configuration = null;
         try {
             configuration = new Configuration.Builder()
-                    .setName("bot")
-                    .setServerPassword("")
-                    .setServerHostname("sig.segv.at")
-                    .setServerPort(9992)
-                    .addAutoJoinChannel("#door")
+                    .setName(args[0])
+                    .setServerPassword(args[1])
+                    .setServerHostname(args[2])
+                    .setServerPort(Integer.parseInt(args[3]))
+                    .addAutoJoinChannel(args[4])
                     .setSocketFactory(aDefault)
                     .addListener(new EventListener())
                     .buildConfiguration();
