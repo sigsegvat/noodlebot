@@ -1,3 +1,8 @@
+package at.segv.noodlebot;
+
+import at.segv.noodlebot.messages.EatEvent;
+import at.segv.noodlebot.processors.EventType;
+import at.segv.noodlebot.processors.VenueDetector;
 import org.pircbotx.User;
 import org.pircbotx.hooks.Event;
 import org.pircbotx.hooks.Listener;
@@ -13,10 +18,9 @@ import java.util.*;
 */
 class EventListener extends ListenerAdapter {
 
-
-    static final Set<String> venues = new HashSet<>();
-
     private Map<String,Set<User>> venueMap= new HashMap<>();
+
+    private VenueDetector venueDetector = new VenueDetector();
 
     @Override
     public void onEvent(Event event) throws Exception {
@@ -24,27 +28,14 @@ class EventListener extends ListenerAdapter {
         System.out.println(event);
     }
 
-    @Override
-    public void onPrivateMessage(PrivateMessageEvent event) throws Exception {
-        event.respond("wow");
-
-
-    }
 
     @Override
     public void onMessage(MessageEvent event)  throws Exception{
         String message = event.getMessage();
 
-        if(message.startsWith("kennst du schon ") && message.endsWith("?")){
-            String newVenue = message.substring(16,message.length()-1);
-            if(venues.contains(newVenue)){
-                event.respond("ja, "+newVenue+" kenn ich schon");
-            }else {
-                event.respond("wow, "+newVenue+" kenn ich no ned!");
-                venues.add(newVenue);
-            }
-        }
-        else if(message.startsWith("wohin essen?")){
+        Optional<at.segv.noodlebot.messages.Event> detected = venueDetector.detect(message);
+
+       if(message.startsWith("wohin essen?")){
 
 
             for(String venue: venueMap.keySet()){
@@ -64,25 +55,14 @@ class EventListener extends ListenerAdapter {
     }
 
     private void addVenue(MessageEvent event, String message) {
-        for(String venue:venues){
-            if(message.toLowerCase().contains(venue)){
-                event.getChannel().send().action(event.getUser().getNick()+" geht zum "+venue);
-                addToMap(event.getUser(),venue);
+        Optional<at.segv.noodlebot.messages.Event> detected = venueDetector.detect(message);
+        if(detected.isPresent() && detected.get().getClass() == EatEvent.class){
+            EatEvent eatEvent = (EatEvent) detected.get();
 
-                StringBuilder others=new StringBuilder();
-                for(User u: venueMap.get(venue)){
-                    if(!u.equals(event.getUser())) {
-                        others.append(u.getNick() + " ");
-                    }
-                };
-                if(others.length()==0){
-                    others.append("niemand");
-                }
-                event.getChannel().send().action("Zum "+venue+" gehn sonst noch: "+others);
 
-                break;
-            }
+            addToMap(event.getUser(),eatEvent.getVenue());
         }
+
     }
 
     private void addToMap(User user, String venue){

@@ -1,3 +1,4 @@
+package at.segv.noodlebot;
 import org.pircbotx.Configuration;
 import org.pircbotx.PircBotX;
 import org.pircbotx.UtilSSLSocketFactory;
