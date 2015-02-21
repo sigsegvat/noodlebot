@@ -26,9 +26,8 @@ public class SpeechProcessor {
 
             ObjectStream<String> lineStream = new PlainTextByLineStream(dataIn, "UTF-8");
             ObjectStream<DocumentSample> sampleStream = new DocumentSampleStream(lineStream);
+            documentModel = DocumentCategorizerME.train("de", sampleStream, 5, 1000);
 
-            documentModel = DocumentCategorizerME.train("de", sampleStream);
-            myCategorizer = new DocumentCategorizerME(documentModel);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -37,14 +36,16 @@ public class SpeechProcessor {
 
     }
 
-    public Optional<EventType> analyzeSentence(String sentence) {
-        String bestCategory = myCategorizer.getBestCategory(myCategorizer.categorize(sentence));
+    public EventType analyzeSentence(String sentence) {
+        myCategorizer = new DocumentCategorizerME(documentModel);
+        double[] categorize = myCategorizer.categorize(sentence);
+        String bestCategory = myCategorizer.getBestCategory(categorize);
 
         if("EatEvent".equals(bestCategory)){
-            return  Optional.of(EventType.EatEvent);
+            return  EventType.EatEvent;
         }
         else {
-            return Optional.empty();
+            return EventType.UnknownEvent;
         }
     }
 

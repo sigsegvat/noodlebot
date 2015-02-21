@@ -1,104 +1,103 @@
-EatEvent Ich geh zum <START:venue>spar<END>
-EatEvent Ich komm auch mit
-EatEvent <START:venue>Noodlinger<END>
-EatEvent Ich geh zum <START:venue>nudlinger<END>
+EatEvent Ich geh zum spar
+EatEvent glaub i geh zum spar
+EatEvent Ich glaub komm auch mit
+EatEvent Noodlinger
+EatEvent Ich geh zum nudlinger
 EatEvent wart ich komm ah
-EatEvent <START:venue>Italiener<END> anyone?
-EatEvent wir gehn um halb zwölf zum <START:venue>IT<END>
-EatEvent ich geh auch zum <START:venue>IT<END>
-EatEvent <START:venue>italiener<END> it is then
+EatEvent Italiener anyone
+EatEvent wir gehn um halb zwölf zum IT
+EatEvent ich geh auch zum IT
+EatEvent italiener it is then
 OtherEvent qb dev
 OtherEvent build ist kaputt
 OtherEvent mir ist fad
 OtherEvent exception gibts auf dev
-EatEvent Ich geh zum <START:venue>spar<END>
-EatEvent Ich komm auch mit
-EatEvent <START:venue>Noodlinger<END>
-EatEvent Ich geh zum <START:venue>nudlinger<END>
-EatEvent wart ich komm ah
-EatEvent <START:venue>Italiener<END> anyone?
-EatEvent wir gehn um halb zwölf zum <START:venue>IT<END>
-EatEvent ich geh auch zum <START:venue>IT<END>
-EatEvent <START:venue>italiener<END> it is then
-OtherEvent qb dev
-OtherEvent build ist kaputt
-OtherEvent mir ist fad
-OtherEvent exception gibts auf dev
-EatEvent Ich geh zum <START:venue>spar<END>
-EatEvent Ich komm auch mit
-EatEvent <START:venue>Noodlinger<END>
-EatEvent Ich geh zum <START:venue>nudlinger<END>
-EatEvent wart ich komm ah
-EatEvent <START:venue>Italiener<END> anyone?
-EatEvent wir gehn um halb zwölf zum <START:venue>IT<END>
-EatEvent ich geh auch zum <START:venue>IT<END>
-EatEvent <START:venue>italiener<END> it is then
-OtherEvent qb dev
-OtherEvent build ist kaputt
-OtherEvent mir ist fad
-OtherEvent exception gibts auf dev
-EatEvent Ich geh zum <START:venue>spar<END>
-EatEvent Ich komm auch mit
-EatEvent <START:venue>Noodlinger<END>
-EatEvent Ich geh zum <START:venue>nudlinger<END>
-EatEvent wart ich komm ah
-EatEvent <START:venue>Italiener<END> anyone?
-EatEvent wir gehn um halb zwölf zum <START:venue>IT<END>
-EatEvent ich geh auch zum <START:venue>IT<END>
-EatEvent <START:venue>italiener<END> it is then
-OtherEvent qb dev
-OtherEvent build ist kaputt
-OtherEvent mir ist fad
-OtherEvent exception gibts auf dev
-EatEvent Ich geh zum <START:venue>spar<END>
-EatEvent Ich komm auch mit
-EatEvent <START:venue>Noodlinger<END>
-EatEvent Ich geh zum <START:venue>nudlinger<END>
-EatEvent wart ich komm ah
-EatEvent <START:venue>Italiener<END> anyone?
-EatEvent wir gehn um halb zwölf zum <START:venue>IT<END>
-EatEvent ich geh auch zum <START:venue>IT<END>
-EatEvent <START:venue>italiener<END> it is then
-OtherEvent qb dev
-OtherEvent build ist kaputt
-OtherEvent mir ist fad
-OtherEvent exception gibts auf dev
-EatEvent Ich geh zum <START:venue>spar<END>
-EatEvent Ich komm auch mit
-EatEvent <START:venue>Noodlinger<END>
-EatEvent Ich geh zum <START:venue>nudlinger<END>
-EatEvent wart ich komm ah
-EatEvent <START:venue>Italiener<END> anyone?
-EatEvent wir gehn um halb zwölf zum <START:venue>IT<END>
-EatEvent ich geh auch zum <START:venue>IT<END>
-EatEvent <START:venue>italiener<END> it is then
-OtherEvent qb dev
-OtherEvent build ist kaputt
-OtherEvent mir ist fad
-OtherEvent exception gibts auf dev
-EatEvent Ich geh zum <START:venue>spar<END>
-EatEvent Ich komm auch mit
-EatEvent <START:venue>Noodlinger<END>
-EatEvent Ich geh zum <START:venue>nudlinger<END>
-EatEvent wart ich komm ah
-EatEvent <START:venue>Italiener<END> anyone?
-EatEvent wir gehn um halb zwölf zum <START:venue>IT<END>
-EatEvent ich geh auch zum <START:venue>IT<END>
-EatEvent <START:venue>italiener<END> it is then
-OtherEvent qb dev
-OtherEvent build ist kaputt
-OtherEvent mir ist fad
-OtherEvent exception gibts auf dev
-EatEvent Ich geh zum <START:venue>spar<END>
-EatEvent Ich komm auch mit
-EatEvent <START:venue>Noodlinger<END>
-EatEvent Ich geh zum <START:venue>nudlinger<END>
-EatEvent wart ich komm ah
-EatEvent <START:venue>Italiener<END> anyone?
-EatEvent wir gehn um halb zwölf zum <START:venue>IT<END>
-EatEvent ich geh auch zum <START:venue>IT<END>
-EatEvent <START:venue>italiener<END> it is then
-OtherEvent qb dev
-OtherEvent build ist kaputt
-OtherEvent mir ist fad
-OtherEvent exception gibts auf dev
+OtherEvent ich build mal dev
+OtherEvent ich glaub ich builde mal dev
+OtherEvent trinken was klar ist
+OtherEvent und ficken was da ist
+OtherEvent :P OtherEvent ;)
+OtherEvent am besten mit dicken ti***
+OtherEvent mit dicken tischen?
+OtherEvent ja Notze und langen beinen
+OtherEvent hm
+OtherEvent da brauch ich abern großen S*****
+OtherEvent Stuhl
+OtherEvent Metalheads haben eh den besten Humor 
+OtherEvent How come? 
+OtherEvent Steh beim Kaufland an der "Schnellkasse" (wieso auch immer die so heißt), vor mir ein Mitzwanziger ganz in dunkel und vor ihm so ein Paris Hilton-Klon 
+OtherEvent Na ja, er klopft ihr plötzlich auf die Schulter und fragt ganz nett "Entschuldigung. Kennen wir uns?" 
+OtherEvent Sie dreht sich um, lässt ihren Blick einmal von oben nach unten und zurück wandern und meint dann "Das bezweifel ich stark." 
+OtherEvent Darauf er "Darf ich mich vorstellen?" 
+OtherEvent Sie "Von mir aus." 
+OtherEvent Darauf geht er an ihr vorbei und fängt an sein Zeug auf's Band zu legen :D 
+OtherEvent ... 
+OtherEvent Hä? 
+OtherEvent Genau das dachte ich auch. Bis ich's gerafft hab...
+OtherEvent Also ich steh so in der Schlange bei Aldi und die ist schon etwas länger. Da kommt so eine typische Meckere-Oma nach vorne und meint zu dem recht jungen Kassierer, ob er nicht noch ne zweite Kasse aufmachen kann. Er: "Moment", räuspert sich und brüllt dan ins Mikro: 
+OtherEvent "this is checkout one - I'm completely alone out here - our outpost is being overrun - two and three are dead (damit meinte er die Kassennummern) and the enemy is pushing hard forward - I'm outnumbered and outflanked - need ground support – NOW!" 
+OtherEvent rofl wie geil 
+OtherEvent lol x) 
+OtherEvent Die alte Oma guckt ihn total versört an, aber der Hammer kommt noch: 
+OtherEvent was ist das denn für ein nerd? :-D 
+OtherEvent Dann kommt ziemlich schnell eine Kollegin an, bestimmt 40 Jahre alt und sag so mit so einer echten Veteranenstimme: "Unterstützung da! Wo ist der Feind?" Und kuckt die Oma dabei grimmig an, halt so gespielt. 
+OtherEvent alter in was für geek aldis kaufst du ein? 
+OtherEvent was fürn zockerladen 
+OtherEvent Ey ich hab so gelegen. Die Oma war am liebsten ohne zu zahlen rausgerannt, die hat so verzweifelt dreingeschaut.
+OtherEvent Hey Michael mal bock auf nen richtigen Männerabend mit Steffen und Chriss? 
+OtherEvent Klar! Dann brauchen wir Bier und pornos :D 
+OtherEvent Wir haben noch nen Kasten im Keller... und rein theoretisch könnten wir uns die Porns auch aufm Beamer angucken! * Mietzekatze has joined #Treffpunkt 
+OtherEvent Moin Jungs 
+OtherEvent Naja auf jeden Fall gibt der boon mir dann voll den Headi durch die Wall. Voll der Luckshot! 
+OtherEvent Hatte ich auch mal. Aber das Cheaterkind hat Wallhack benutzt. Wurd dann auch gleich gekickt. Solche Leute in der ESL wirds nie geben! 
+OtherEvent Ach ihr labert nur über Counterstrike... machts gut! * Mietzekatze has quit IRC (leave) 
+OtherEvent So... was meinste nun. Beamer oder Fernseher? 
+OtherEvent Beamer kommt besser!
+OtherEvent Der Kohnen ist ja so geil 
+OtherEvent Warum ? 
+OtherEvent Naja, wir sin bei mir durch die Ortschaft gefahren.. Etwas zu schnell natürlich. 
+OtherEvent Dann war da eine Polizeikontrolle und die haben uns angehalten, zwar nicht geblitzt aber haben uns halt verwarnt, wir seien zu schnell gefahren 
+OtherEvent aha un dann ? 
+OtherEvent Kohnen saß nur aufm Beifahrersitz weil er übelst breit war. 
+OtherEvent Was macht er ? Klappt das Handschuhfach auf und ruft "BRÜCKE AN MASCHINENRAUM, WENIGER KOHLE! WIR FAHREN ZU SCHNELL !" 
+OtherEvent WTF ! Komm mal auf so n Scheiß 
+OtherEvent Da musste sogar der Polizist grinsen und hat uns weitergewunken.. :D
+OtherEvent Lol, zum Glück waren die Zimmer in diesem Jahr anders aufgeteilt als im letzten Jahr. 
+OtherEvent Warum? 
+OtherEvent Naja, ich war doch letztes Jahr mit Daniel und Calle aufm Zimmer. Ein Abend war ich Nachts draußen zum telen, und als ich zurück kam wurde ich erstmal wüst beschimpft 
+OtherEvent Was hast du gemacht? 
+OtherEvent Naja, die beiden haben folgendes gemacht: Sie fanden es irgendwie witzig, nackt in meinem Bett zu liegen wenn ich reinkomme. Zuerst hat sich Daniel ausgezogen und wollte mir wenn ich reinkomme nackt im Bett auflauern. Das fand Calle dann so witzig, dass er sich auch ausgezogen hat, und - mit ner Decke dazwischen - sich auch nackt in mein Bett gelegt hat... 
+OtherEvent Lol... 
+OtherEvent Naja...die Tür ging ja auch irgendwann auf, nur war nicht ich es der reinkam, sondern unser Trainer der die beiden Nackt zusammen in meinem Bett vorgefunden hat. 
+OtherEvent LOL! 
+OtherEvent Am geilsten war eigentlich der Satz, mit dem sie sich erklären wollten: "Erm...es ist nicht so wie es aussieht...wir warten auf Michel!!" 
+OtherEvent ROFL!! 
+OtherEvent ...
+OtherEvent Metalheads haben eh den besten Humor 
+OtherEvent How come? 
+OtherEvent Steh beim Kaufland an der "Schnellkasse" (wieso auch immer die so heißt), vor mir ein Mitzwanziger ganz in dunkel und vor ihm so ein Paris Hilton-Klon 
+OtherEvent Na ja, er klopft ihr plötzlich auf die Schulter und fragt ganz nett "Entschuldigung. Kennen wir uns?" 
+OtherEvent Sie dreht sich um, lässt ihren Blick einmal von oben nach unten und zurück wandern und meint dann "Das bezweifel ich stark." 
+OtherEvent Darauf er "Darf ich mich vorstellen?" 
+OtherEvent Sie "Von mir aus." 
+OtherEvent Darauf geht er an ihr vorbei und fängt an sein Zeug auf's Band zu legen :D 
+OtherEvent ... 
+OtherEvent Hä? 
+OtherEvent Genau das dachte ich auch. Bis ich's gerafft hab...
+OtherEvent Also ich steh so in der Schlange bei Aldi und die ist schon etwas länger. Da kommt so eine typische Meckere-Oma nach vorne und meint zu dem recht jungen Kassierer, ob er nicht noch ne zweite Kasse aufmachen kann. Er: "Moment", räuspert sich und brüllt dan ins Mikro: 
+OtherEvent "this is checkout one - I'm completely alone out here - our outpost is being overrun - two and three are dead (damit meinte er die Kassennummern) and the enemy is pushing hard forward - I'm outnumbered and outflanked - need ground support – NOW!" 
+OtherEvent rofl wie geil 
+OtherEvent lol x) 
+OtherEvent Die alte Oma guckt ihn total versört an, aber der Hammer kommt noch: 
+OtherEvent was ist das denn für ein nerd? :-D 
+OtherEvent Dann kommt ziemlich schnell eine Kollegin an, bestimmt 40 Jahre alt und sag so mit so einer echten Veteranenstimme: "Unterstützung da! Wo ist der Feind?" Und kuckt die Oma dabei grimmig an, halt so gespielt. 
+OtherEvent alter in was für geek aldis kaufst du ein? 
+OtherEvent was fürn zockerladen 
+OtherEvent Ey ich hab so gelegen. Die Oma war am liebsten ohne zu zahlen rausgerannt, die hat so verzweifelt dreingeschaut.
+OtherEvent Es gibt Idioten... 
+OtherEvent Ich steig heut aus dem Bus aus und seh plötzlich so nen komischen Typ an meinem Fahrrad rummachen... 
+OtherEvent Geh hin und frag: "Ehm...was machste da?" 
+OtherEvent Er: "Mein Fahrradschloss geht nimmer auf, kannste mir helfen?" 
+OtherEvent Dann ich so: "Ja warte, ich hab den Schlüssel." 
+OtherEvent Er: "Fett, danke." 
+OtherEvent Als ich dann angefangen hab zu lachen, hat er auch gemerkt, was los ist und ist weg gerannt :D. 

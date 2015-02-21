@@ -17,9 +17,9 @@ public class VenueDetector {
     }
 
     public Optional<Event> detect(String sentence){
-        Optional<EventType> eventType = speechProcessor.analyzeSentence(sentence);
+        EventType eventType = speechProcessor.analyzeSentence(sentence);
         Optional<String> s = detectVenue(sentence);
-        if( eventType.orElse(EventType.UnknownEvent) == EventType.EatEvent && s.isPresent()){
+        if( eventType == EventType.EatEvent && s.isPresent()){
 
             return Optional.of(new EatEvent(sentence, s.get()));
         }
