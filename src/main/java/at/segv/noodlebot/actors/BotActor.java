@@ -20,6 +20,7 @@ import java.io.IOException;
 public class BotActor extends UntypedActor {
 
     private PircBotX bot;
+    private Thread botThread;
 
     public BotActor(String args[]){
 
@@ -36,6 +37,7 @@ public class BotActor extends UntypedActor {
                     .setServerPort(Integer.parseInt(args[3]))
                     .addAutoJoinChannel(args[4])
                     .setSocketFactory(aDefault)
+                    .setSocketTimeout(2000)
                     .addListener(new EventListener(messsageProcessor))
                     .buildConfiguration();
         } catch (Exception e) {
@@ -60,15 +62,23 @@ public class BotActor extends UntypedActor {
         if(o instanceof String){
             sendMessage((String) o);
         }else if(o instanceof Initialize){
-            createBotThread().start();
+            botThread = createBotThread();
+            botThread.start();
         }
+    }
+
+    public void postStop() {
+        bot.stopBotReconnect();
+        botThread.interrupt();
     }
 
     private Thread createBotThread() {
         return new Thread(){
             public void run() {
                 try {
+                    System.out.println("BOTID: "+this.getThreadGroup()+" "+this.getName());
                     bot.startBot();
+
                 } catch (IOException |IrcException e) {
                     e.printStackTrace();
                 }

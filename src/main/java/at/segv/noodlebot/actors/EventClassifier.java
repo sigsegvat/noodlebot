@@ -15,6 +15,8 @@ import opennlp.tools.util.PlainTextByLineStream;
 public class EventClassifier extends UntypedActor {
 
 
+    public static final String EAT_EVENT = "EatEvent";
+    public static final String WHERE_EAT_EVENT = "WhereEatEvent";
     private DocumentCategorizerME myCategorizer = null;
     private DoccatModel documentModel = null;
 
@@ -39,6 +41,7 @@ public class EventClassifier extends UntypedActor {
             ObjectStream<String> lineStream = new PlainTextByLineStream(dataIn, "UTF-8");
             ObjectStream<DocumentSample> sampleStream = new DocumentSampleStream(lineStream);
             documentModel = DocumentCategorizerME.train("de", sampleStream, 5, 100);
+            myCategorizer = new DocumentCategorizerME(documentModel);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -48,14 +51,17 @@ public class EventClassifier extends UntypedActor {
     }
 
     public Event analyzeSentence(String message) {
-        myCategorizer = new DocumentCategorizerME(documentModel);
+
         double[] categorize = myCategorizer.categorize(message);
         String bestCategory = myCategorizer.getBestCategory(categorize);
+        double bestProb = categorize[myCategorizer.getIndex(bestCategory)];
 
-        if("EatEvent".equals(bestCategory)){
+        if(bestProb<=0.5) return new Event(message);
+
+        if(EAT_EVENT.equals(bestCategory)){
             return  new EatEvent(message);
         }
-        else if("WhereEatEvent".equals(bestCategory)){
+        else if(WHERE_EAT_EVENT.equals(bestCategory)){
             return  new WhereEatEvent(message);
         }
         else {
