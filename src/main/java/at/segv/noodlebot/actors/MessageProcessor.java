@@ -26,7 +26,7 @@ public class MessageProcessor extends UntypedActor{
         if(o instanceof MessageEvent){
            getContext().getChild(MSG_PROC).tell(((Event) o).getText(),self());
         }else if(o instanceof VenueEatEvent){
-            getContext().actorSelection("../sender").tell("venue found: "+((VenueEatEvent) o).getVenue(),self());
+            getContext().parent().tell("venue found: "+((VenueEatEvent) o).getVenue(),self());
         }else if(o instanceof EatEvent){
             getContext().getChild(VEN_DET).tell(o,self());
         }

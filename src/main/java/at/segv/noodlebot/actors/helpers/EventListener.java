@@ -1,4 +1,4 @@
-package at.segv.noodlebot;
+package at.segv.noodlebot.actors.helpers;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
