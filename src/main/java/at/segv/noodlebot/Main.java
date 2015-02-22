@@ -1,4 +1,8 @@
 package at.segv.noodlebot;
+import akka.actor.ActorRef;
+import akka.actor.ActorSystem;
+import at.segv.noodlebot.actors.BotMessageSender;
+import at.segv.noodlebot.actors.MessageProcessor;
 import org.pircbotx.Configuration;
 import org.pircbotx.PircBotX;
 import org.pircbotx.UtilSSLSocketFactory;
@@ -15,6 +19,10 @@ public class Main {
         UtilSSLSocketFactory aDefault = new UtilSSLSocketFactory();
         aDefault.trustAllCertificates();
 
+        ActorSystem botnet = ActorSystem.create("botnet");
+        ActorRef messsageProcessor = botnet.actorOf(MessageProcessor.props());
+
+
         Configuration configuration = null;
         try {
             configuration = new Configuration.Builder()
@@ -24,7 +32,7 @@ public class Main {
                     .setServerPort(Integer.parseInt(args[3]))
                     .addAutoJoinChannel(args[4])
                     .setSocketFactory(aDefault)
-                    .addListener(new EventListener())
+                    .addListener(new EventListener(messsageProcessor))
                     .buildConfiguration();
         } catch (Exception e) {
             e.printStackTrace();
@@ -32,8 +40,13 @@ public class Main {
 
 
         PircBotX bot = new PircBotX(configuration);
-
+        botnet.actorOf(BotMessageSender.props(bot),"sender");
+        System.out.println(botnet);
         bot.startBot();
+
+
+
+
 
 
     }
